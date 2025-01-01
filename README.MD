@@ -20,6 +20,31 @@ Este projeto é um exercício didático que combina conceitos de **matemática**
 
 ---
 
+# Disclaimer: Exercício de Probabilidade e Frequência de Sorteio
+
+Este exercício tem como objetivo demonstrar **como calcular a probabilidade e analisar a frequência dos números sorteados** na Mega-Sena utilizando conceitos matemáticos e estatísticos. A ideia central é ensinar como realizar cálculos de probabilidade, identificar padrões históricos e compreender a distribuição de números em eventos passados.
+
+## Importante:
+- **Este exercício não implica em prever os resultados do próximo sorteio da Mega-Sena.**
+- A Mega-Sena é um sistema de sorteio **aleatório**, no qual cada número tem **igual probabilidade de ser sorteado** em cada rodada.
+- O histórico de números sorteados não influencia os resultados futuros, pois cada sorteio é independente e não sofre interferência de eventos anteriores.
+
+## Por que não é possível prever os próximos resultados?
+De acordo com a **teoria das probabilidades** e a dinâmica dos sorteios:
+- A Mega-Sena utiliza métodos calibrados para garantir que os números sejam sorteados de maneira totalmente aleatória.
+- Não existem fatores conhecidos que possam alterar a probabilidade de um número ser sorteado em relação a outro.
+- Qualquer padrão percebido nos resultados anteriores é meramente coincidência ou fruto da interpretação humana (viés de padrão).
+
+## Finalidade do Exercício
+O foco deste exercício é:
+1. **Ensinar o conceito de probabilidade e frequências estatísticas.**
+2. Analisar eventos passados como forma de explorar a matemática envolvida.
+3. Fornecer uma ferramenta educacional para aprender a trabalhar com dados, simulações e probabilidades.
+
+Por isso, use este exercício como um aprendizado matemático e estatístico e lembre-se de que **não existem garantias de vitória em jogos de azar como a Mega-Sena**. Jogue com responsabilidade!
+
+---
+
 ## Requisitos do Ambiente
 
 Certifique-se de ter instalados:
