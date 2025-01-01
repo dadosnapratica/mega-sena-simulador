@@ -28,7 +28,7 @@ Certifique-se de ter instalados:
 - **Visual Studio Code** (recomendado) com extensões de suporte ao Python.
 - **Jupyter Notebook** (opcional, para exploração interativa).
 
-## Passo a Passo para Execução
+## Passo a Passo da Execução
 
 ### 1. Download dos Dados
 
@@ -57,6 +57,124 @@ Os dados brutos são processados para remover linhas não numéricas, ajustar co
 ### 4. Simulação de Apostas
 
 O projeto inclui uma função para gerar apostas baseadas nos números mais sorteados. Também é possível ajustar parâmetros como o número de jogos, quantidade de números por jogo e o ranking dos números selecionados.
+
+---
+
+# Mega-Sena: Análise Estatística e Simulação com Python
+
+Este projeto é um exercício didático que combina conceitos de **matemática** (probabilidade, estatística, dispersão) com **programação em Python**. Ele utiliza dados reais da Mega-Sena para realizar análises estatísticas e criar simulações de apostas baseadas em diferentes estratégias.
+
+## Funcionalidades do Projeto
+
+- **Download de Dados Históricos**: Utiliza a biblioteca `requests` para baixar dados históricos diretamente do site [As Loterias](https://asloterias.com.br/download-todos-resultados-mega-sena).
+- **Análise Estatística**: Frequência dos números sorteados, dispersão estatística entre os números mais e menos sorteados.
+- **Simulação de Apostas**: Geração de jogos com combinações aleatórias e baseados nos números mais sorteados.
+- **Exploração de Dados**: Manipulação de dados usando `pandas` e `numpy`.
+
+---
+
+## Objetivos
+
+1. Baixar e processar dados históricos da Mega-Sena.
+2. Realizar análises estatísticas para entender padrões e frequência de números sorteados.
+3. Simular estratégias de apostas com base em dados históricos.
+4. Fornecer um exemplo prático de uso de Python para resolver problemas do mundo real.
+
+---
+
+## Requisitos do Ambiente
+
+Certifique-se de ter instalados:
+
+- **Python 3.8+**
+- **Visual Studio Code** (recomendado) com extensões de suporte ao Python.
+- **Jupyter Notebook** (opcional, para exploração interativa).
+
+### Bibliotecas Necessárias
+
+Instale as dependências com o seguinte comando:
+
+```bash
+pip install pandas numpy requests jupyter openpyxl
+```
+
+---
+
+## Passo a Passo para Execução
+
+### 1. Download dos Dados
+
+Os dados históricos podem ser baixados automaticamente através do script usando a biblioteca `requests`. O script faz um POST para o site [As Loterias](https://asloterias.com.br/download-todos-resultados-mega-sena), salvando o arquivo `mega_sena_dados_brutos.xlsx`.
+
+```python
+import requests
+
+url = "https://asloterias.com.br/download_excel.php"
+output_file = "mega_sena_dados_brutos.xlsx"
+
+response = requests.post(url)
+with open(output_file, "wb") as file:
+    file.write(response.content)
+
+print(f"Arquivo salvo como: {output_file}")
+```
+
+---
+
+### 2. Limpeza e Preparação dos Dados
+
+Os dados brutos são processados para remover linhas não numéricas, ajustar colunas e renomear cabeçalhos. Aqui é utilizada a biblioteca `pandas` para transformar os dados em um formato adequado para análise.
+
+---
+
+### 3. Análises Estatísticas
+
+#### **Frequência dos Números Sorteados**
+- Contagem de quantas vezes cada número foi sorteado.
+- Ordenação por frequência decrescente.
+
+#### **Dispersão**
+- Comparação entre os números mais sorteados, menos sorteados e medianos.
+- Avaliação da relevância estatística dos números.
+
+---
+
+### 4. Simulação de Apostas
+
+O projeto inclui uma função para gerar apostas baseadas nos números mais sorteados. Também é possível ajustar parâmetros como o número de jogos, quantidade de números por jogo e o ranking dos números selecionados.
+
+---
+
+## Como Rodar o Projeto com o Notebook
+
+### Executando no Visual Studio Code
+
+1. Certifique-se de que o **Python** e a extensão **Jupyter** estão instalados no VS Code.
+   - Instale a extensão **Jupyter** diretamente no marketplace do VS Code.
+
+2. Abra o arquivo `mega_sena_analysis.ipynb` no VS Code.
+
+3. Clique em qualquer célula do notebook e selecione o kernel Python apropriado (versão 3.8 ou superior).
+
+4. Execute as células sequencialmente clicando no botão de execução (▶) no topo de cada célula ou pressione `Shift + Enter`.
+
+5. Siga as instruções no notebook para explorar os dados, realizar análises estatísticas e simular apostas.
+
+### Executando no Google Colab
+
+1. Faça login na sua conta do Google e acesse [Google Colab](https://colab.research.google.com/).
+
+2. Faça upload do arquivo `mega_sena_analysis.ipynb` clicando em **File > Upload Notebook**.
+
+3. Certifique-se de que as bibliotecas necessárias estão instaladas. Adicione uma célula no início do notebook com o seguinte comando e execute:
+
+   ```python
+   !pip install pandas numpy requests openpyxl
+   ```
+
+4. Execute as células do notebook sequencialmente clicando no botão de execução (▶) ao lado de cada célula.
+
+5. Explore os dados e simulações de forma interativa, direto na nuvem!
 
 ---
 
