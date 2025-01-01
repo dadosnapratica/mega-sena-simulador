@@ -43,6 +43,10 @@ O foco deste exercício é:
 
 Por isso, use este exercício como um aprendizado matemático e estatístico e lembre-se de que **não existem garantias de vitória em jogos de azar como a Mega-Sena**. Jogue com responsabilidade!
 
+Um site que explica esses conceitos mais detalhadamemte é o [sci-culture](ttp://m.sci-culture.com/br). O  artigo [Mega Sena: Um estudo de Probabilidades e Análise Combinatória](http://m.sci-culture.com/br/matematica/combinatoria-probabilidades/combinacoes-probabilidades-megasena.html) ilustra esses comceitos.
+
+O site oficial da Caixa tambem fornece informações historicas sobre os sorteios, a metodologia e sobre a metodologia probalistica. Acesse aqui a sessão sobre [Probalidade](https://loterias.caixa.gov.br/Paginas/Mega-Sena.aspx)
+
 ---
 
 ## Requisitos do Ambiente
